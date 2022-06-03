@@ -1,0 +1,44 @@
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 创建表单  method 方式 方法 定义表单提交的发 方法 -->
+	<!-- method 一个是get一个是post -->
+	<!-- post 是传送数据,向服务器传送数据,在数据传递过程,用户在地址栏看不到 -->
+	<form action="" method="POST">
+		<input type="text" name="te">账户
+		<input type="password" name="pd">密码
+		<input type="submit">
+	</form>
+	<!-- get是获取,从他服务上获取数据,在数据传说过程中,用户可以在地址栏看到过程 默认传递方式,安全性低-->
+	<form action="" method="GET">
+		<input type="text" name="te">
+		<input type="password" name="pd">
+		<br>
+		<label><input type="checkbox" checked="checked">篮球</label> 
+		<label><input type="checkbox">足球</label>
+		<label><input type="checkbox">网球</label>
+		<label><input type="radio">男</label>
+		<label><input type="radio">女</label>
+		<input type="submit">
+	</form>
+	<form action="" method="GET">
+		<!-- 单纯的按钮,没有提交功能 -->
+		<input type="button" value="获取验证码">
+		<!-- 下拉框 -->
+		<select name="" id="">
+			<option value="">篮球</option>
+			<option value="">足球</option>
+			<option value="">网球</option>
+			<option value="">兵乓球</option>
+			<option value="" selected=selected''>网球</option>
+			<!-- 文本区域 -->
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</select>
+	</form>
+</body>
+</html>
